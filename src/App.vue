@@ -3,8 +3,27 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+
+  <select v-model="currentlang" @click="$store.commit('changelang', currentlang)"> 
+        <option value="en">English</option>
+        <option value="as">Assamese</option>
+        <option value="bn">Bengali</option>
+        <option value="hn">Hindi</option>
+  </select>
+      <p>{{ lang.name }}</p>
+
   <router-view/>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+       currentlang: 'en'
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
