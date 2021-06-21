@@ -1,22 +1,27 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <div>
 
-  <select v-model="currentlang" @click="$store.commit('changelang', currentlang)"> 
-        <option value="en">English</option>
-        <option value="as">Assamese</option>
-        <option value="bn">Bengali</option>
-        <option value="hn">Hindi</option>
-  </select>
+   <fionavbar />
+
+
+  
       <p>{{ lang.name }}</p>
 
   <router-view/>
+
+  <footerfio />
+  </div>
 </template>
 
 <script>
+import footerfio from './components/footerfio.vue'
+import fionavbar from './components/fionavbar.vue'
+
 export default {
+  components: {
+    footerfio,
+    fionavbar
+  },
   data() {
     return {
        currentlang: 'en'
@@ -46,4 +51,6 @@ export default {
     }
   }
 }
+
+
 </style>
