@@ -3,29 +3,45 @@
      <carousel />
     <div class="container-fluid">
 
-      <section id="shopping" class="row">
+      <section id="shopping">
+        <div class="row">
 			    <div class="col-md-4">
 				    <router-link to="/"><div id="shopping-tile"><span>Shopping</span></div>
             </router-link>
 			    </div>
+          <div class="col-md-8">
+            <horizontalscroll/>
+          </div>
+        </div>
+      </section>    
+      <hr>   
 
-          
-      </section>
-
-      <section id="service" class="row">
+      <section id="service" >
+        <div class="row">
           <div class="col-md-4">
 				    <router-link to="/">
             <div id="service-tile"><span>Service</span></div>
             </router-link>
 			    </div>
-      </section>
 
-      <section id="special" class="row">
+          <div class="col-md-8">
+            <horizontalscroll/>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section id="special">
+        <div class="row">
           <div class="col-md-4">
 				    <router-link to="/">
             <div id="special-tile"><span>Whats New</span></div>
             </router-link>
 			    </div>
+
+          <div class="col-md-8">
+            <horizontalscroll/>
+          </div>
+        </div>
       </section>
 
     </div>
@@ -36,11 +52,12 @@
 
 <script>
 import carousel from '../components/carousel.vue'
-
+import horizontalscroll from '../components/horizontalscroll.vue'
 export default {
   name: 'Home',
   components: {
-    carousel
+    carousel,
+    horizontalscroll
   }
 }
 </script>

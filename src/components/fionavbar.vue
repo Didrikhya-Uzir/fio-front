@@ -45,7 +45,7 @@
         </section>
 
         <section id="langchange">
-            <select class="navbar-nav ml-auto" v-model="currentlang" @click="$store.commit('changelang', currentlang)"> 
+            <select class="navbar-nav ml-auto btn btn-secondary dropdown-toggle" v-model="currentlang" @click="$store.commit('changelang', currentlang)"> 
                 <option value="en">English</option>
                 <option value="as">Assamese</option>
                 <option value="bn">Bengali</option>
