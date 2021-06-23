@@ -88,6 +88,8 @@ section {
     padding: 0 ;
 }
 
-
+.btn btn-success{
+    color: rgb(30 215 96);
+}
 
 </style>
