@@ -76,15 +76,21 @@ export default {
 
 
 #shopping-tile, #service-tile, #special-tile {
+  display: block;
+  position: absolute;
   box-shadow: 0 1px 5px 1px #ccc;
-  width: 100%;
+  top: 0px;
+  left: 20px;
+  cursor: pointer;
   height: 250px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border: 2px solid #aaa;
   border-radius: 8px; 
   background-position: center;
   margin: 5px;
+  animation: 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 normal both running animation-8jxysv;
 }
 
 #shopping-tile:hover , #service-tile:hover , #special-tile:hover {
