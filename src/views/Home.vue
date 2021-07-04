@@ -99,14 +99,17 @@ export default {
 
 #shopping-tile {
   background: url("../assets/home/shopping.jpg") no-repeat;
+  color: #add8e6;
 }
 
 #service-tile {
   background: url("../assets/home/service.jpg") no-repeat;
+  color: darkorange;
 }
 
 #special-tile  {
   background-image: url("../assets/home/opportunities.jpg") no-repeat;
+  color: darkblue;
 }
 
 #shopping-tile span , #service-tile span, #special-tile span {

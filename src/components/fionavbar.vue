@@ -75,7 +75,7 @@ export default {
 
 <style scoped>
 .c-navbar{
-    background-color: black !important;
+    background-color: #4169e1 !important;
 }
 
 .c-brand{
@@ -89,7 +89,7 @@ section {
 }
 
 .btn btn-success{
-    color: rgb(30 215 96);
+    color: darkblue;
 }
 
 </style>
