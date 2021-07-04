@@ -25,7 +25,7 @@
         <section id="searchbar ">
             <form class="form-inline justify-content-center">
                 <input class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-success" type="submit">Search</button> 
+                <button class="btn btn-success" type="submit" style="background-color: darkblue;">Search</button> 
             </form>
         </section>
 
@@ -75,7 +75,7 @@ export default {
 
 <style scoped>
 .c-navbar{
-    background-color: black !important;
+    background-color: #4169e1 !important;
 }
 
 .c-brand{
@@ -89,7 +89,7 @@ section {
 }
 
 .btn btn-success{
-    color: rgb(30 215 96);
+    color: whitesmoke;
 }
 
 </style>

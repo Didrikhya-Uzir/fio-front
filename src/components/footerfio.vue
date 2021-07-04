@@ -102,7 +102,7 @@
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #222;
+  background-color: #172337;
   border-top: 0;
   color:#fff;
 }
