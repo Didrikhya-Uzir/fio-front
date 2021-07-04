@@ -89,7 +89,7 @@ section {
 }
 
 .btn btn-success{
-    color: darkblue;
+    color: whitesmoke;
 }
 
 </style>
