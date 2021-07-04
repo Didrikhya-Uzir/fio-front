@@ -2,6 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ShoppingHome from '../views/ShoppingHome.vue'
 import AllProductList from '../views/AllProductList.vue'
+import SignUp from '../views/SignUp.vue'
+import Login from '../views/Login.vue'
+import ServiceHome from '../views/ServiceHome.vue'
+import ShopProfileBuyer from '../views/ShopProfileBuyer.vue'
 
 const routes = [
   {
@@ -26,6 +30,26 @@ const routes = [
     path: '/products',
     name: 'AllProductList',
     component: AllProductList
+  },
+  {
+    path: '/signup',
+    name: 'SignUp',
+    component: SignUp
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/service',
+    name: 'ServiceHome',
+    component: ServiceHome
+  },
+  {
+    path: '/ShopProfile',
+    name: 'ShopProfileBuyer',
+    component: ShopProfileBuyer
   }
 ]
 

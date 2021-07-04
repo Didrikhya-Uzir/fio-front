@@ -16,6 +16,7 @@
 <script>
 import footerfio from './components/footerfio.vue'
 import fionavbar from './components/fionavbar.vue'
+import axios from 'axios'
 
 export default {
   components: {
@@ -26,6 +27,17 @@ export default {
     return {
        currentlang: 'en'
     }
+  },
+  beforeCreate() {
+    axios.defaults.withCredentials = true
+    axios.get('http://localhost:8000/api/users/validate-refresh-token-get-access-token/')
+    .then(response => {
+      this.$store.commit('updatetoken', response.data['access_token'])
+    })
+    .catch(err => {
+      //this.$router.push('/login')
+      console.log(err)
+    })
   }
 }
 </script>

@@ -6,7 +6,9 @@ import message_bn from '../locales/bn.json'
 
 export default createStore({
   state: {
-    lang: message_en
+    lang: message_en,
+    access_token: null,
+    isAuthenticated: false
    
   },
   mutations: {
@@ -23,7 +25,10 @@ export default createStore({
       else if (lang_val === 'hn') {
         state.lang = message_hn
       }
-   }
+   },
+   updatetoken (state, access) {
+    state.access_token = access
+  }
   },
   actions: {
   },
