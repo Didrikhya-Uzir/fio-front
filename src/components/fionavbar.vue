@@ -30,7 +30,11 @@
                 <option value="clothing">Clothing</option>
             </select>
             </div>
-
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <div class="input-group-append">
+            <button type="button" class="btn btn-success">Search</button>
+            </div>
+        </div>
        
 
 
