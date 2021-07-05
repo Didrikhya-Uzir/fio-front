@@ -27,7 +27,8 @@ export default createStore({
       }
    },
    updatetoken (state, access) {
-    state.access_token = access
+    state.access_token = access;
+    isAuthenticated = true
   }
   },
   actions: {

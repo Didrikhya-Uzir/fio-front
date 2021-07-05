@@ -3,7 +3,14 @@
 
    <fionavbar />
 
-
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/shopping">Shopping Home</router-link> |
+    <router-link to="/products">Products</router-link> |
+    <router-link to="/authenticate">Login and Signup</router-link> |
+    <router-link to="/service">Service Home</router-link> |
+    <router-link to="/ShopProfile">Shop Profile(Buyer Side)</router-link>
+  </div>
   
       <p>{{ lang.name }}</p>
 
@@ -25,19 +32,21 @@ export default {
   },
   data() {
     return {
-       currentlang: 'en'
+       currentlang: 'en',
+       firstloadflag: true
     }
   },
   beforeCreate() {
-    axios.defaults.withCredentials = true
-    axios.get('http://localhost:8000/api/users/validate-refresh-token-get-access-token/')
-    .then(response => {
-      this.$store.commit('updatetoken', response.data['access_token'])
-    })
-    .catch(err => {
-      //this.$router.push('/login')
-      console.log(err)
-    })
+        axios.defaults.withCredentials = true
+        axios.get('http://localhost:8000/api/users/validate-refresh-token-get-access-token/')
+        .then(response => {
+        console.log(response.data)
+        this.$store.commit('updatetoken', response.data['access_token'])
+        })
+        .catch(err => {
+         console.log(err)
+        })
+    
   }
 }
 </script>

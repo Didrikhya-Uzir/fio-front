@@ -7,33 +7,43 @@
             <router-link to="/" class="navbar-brand c-brand">Find It Out</router-link>
         </section>
 
-        <section id="sidebar-left-tabs">
-            <div id="collapsable-nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <router-link to="/" style="color: aliceblue;" class="nav-link" href="#">Categories</router-link>
-                    </li>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse  ml-3">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <router-link to="/" style="color: aliceblue;" class="nav-link" href="#">Categories</router-link>
+                </li>
 
-                    <li class="nav-item">
-                        <router-link to="/" style="color: aliceblue;" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cart</router-link>
-                    </li>
-                    
-                </ul>
+                <li class="nav-item">
+                    <router-link to="/" style="color: aliceblue;" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cart</router-link>
+                </li>
+                
+            </ul>
+        </div>
+     
+    
+        <div class="input-group mx-auto" style="width:50%" >
+            <div class="input-group-prepend">
+            <select v-model="searchby">
+                <option value="allcategory">All Category</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+            </select>
             </div>
-        </section>
+        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-success">Search</button>
+            </div>
+        </div>   
+      
+        
+       
 
-        <section id="searchbar ">
-            <form class="form-inline justify-content-center">
-                <input class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-success" type="submit">Search</button> 
-            </form>
-        </section>
-
-        <section id="sidebar-right-tabs">
-            <div id="collapsable-nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
+       
+            <div id="collapsable-nav" class="collapse navbar-collapse ml-2">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <router-link to="/" style="color: aliceblue;" class="nav-link" href="#">My Account</router-link>
+                        <router-link to="/" style="color: aliceblue;" class="nav-link" href="#"><i class="far fa-user-circle mr-2"></i>My Account</router-link>
                     </li>
 
                     <li class="nav-item">
@@ -42,7 +52,7 @@
                     
                 </ul>
             </div>
-        </section>
+       
 
         <section id="langchange">
             <select class="navbar-nav ml-auto btn btn-secondary dropdown-toggle" v-model="currentlang" @click="$store.commit('changelang', currentlang)"> 
@@ -65,7 +75,8 @@
 export default {
     data() {
         return {
-        currentlang: 'en'
+        currentlang: 'en',
+        searchby: 'allcategory'
         }
     }
 }
