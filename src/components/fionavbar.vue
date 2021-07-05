@@ -30,14 +30,9 @@
                 <option value="clothing">Clothing</option>
             </select>
             </div>
-        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-            <div class="input-group-append">
-                <button type="button" class="btn btn-success">Search</button>
-            </div>
-        </div>   
-      
-        
+
        
+
 
        
             <div id="collapsable-nav" class="collapse navbar-collapse ml-2">
@@ -86,7 +81,7 @@ export default {
 
 <style scoped>
 .c-navbar{
-    background-color: black !important;
+    background-color: #4169e1 !important;
 }
 
 .c-brand{
@@ -100,7 +95,7 @@ section {
 }
 
 .btn btn-success{
-    color: rgb(30 215 96);
+    color: whitesmoke;
 }
 
 </style>
