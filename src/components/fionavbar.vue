@@ -25,7 +25,7 @@
         <section id="searchbar ">
             <form class="form-inline justify-content-center">
                 <input class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-success" type="submit" style="background-color: orange;">Search</button> 
+                <button class="btn btn-success" type="submit" style="background-color: darkblie;">Search</button> 
             </form>
         </section>
 
@@ -90,7 +90,6 @@ section {
 
 .btn btn-success{
     color: whitesmoke;
-    border-color:orange;
 }
 
 </style>
